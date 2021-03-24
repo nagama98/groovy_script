@@ -1,4 +1,4 @@
-    //@Grab(group='org.apache.httpcomponents', module='httpclient', version='4.5.2')
+    @Grab(group='org.apache.httpcomponents', module='httpclient', version='4.5.2')
     //@Grab('org.apache.httpcomponents:httpclient:4.2.1')
     import org.apache.http.impl.client.DefaultHttpClient
     import org.apache.http.client.methods.HttpGet
