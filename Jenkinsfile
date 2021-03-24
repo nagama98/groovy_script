@@ -6,9 +6,11 @@ node {
   git 'https://github.com/nagama98/groovy_script.git'
  }
 
- stage('Load') {
-   code = load 'post.groovy'
-    println code
+ stage('post') {
+sh 'groovy post.groovy'
+ }
+ stage('post') {
+sh 'groovy get.groovy'
  }
    /*stage('excute')
    {
