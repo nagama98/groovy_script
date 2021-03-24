@@ -9,7 +9,8 @@
     import org.apache.http.client.methods.*
     import org.apache.http.entity.*
     import org.apache.http.impl.client.*
-
+class get{
+    static def getmethod(){
     def select
     def top
 
@@ -26,3 +27,8 @@
     def jsonResponse = bufferedReader.getText()
     println "response: \n" + jsonResponse
 
+    }
+    static void main(String[] args) {
+      getmethod();
+   } 
+}

@@ -1,5 +1,4 @@
 //@Grab(group='org.apache.httpcomponents', module='httpclient', version='4.5.2')
-
 import groovy.json.*
 
 import groovy.json.JsonBuilder.*
@@ -10,6 +9,8 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.message.BasicNameValuePair;
 
+class post{
+static def get_token(){
 List<NameValuePair> data = new ArrayList<NameValuePair>(1);
             data.add(new BasicNameValuePair("grant_type", "client_credentials"));
             data.add(new BasicNameValuePair("client_id", "b337f964-6322-4675-b545-b30bce7137cf@6d14682b-68a6-4a25-af3d-06615e146b1e"));
@@ -52,4 +53,8 @@ println "access token: " + access_token
 
 //assert "client-credential" == resultMap["grant-type"]
 //assert resultMap["client-id"] != null
-
+}
+static void main(String[] args) {
+      get_token();
+   } 
+}
