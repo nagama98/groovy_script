@@ -1,5 +1,4 @@
 
-def code
 
 node {
  def get=load("post.groovy")
